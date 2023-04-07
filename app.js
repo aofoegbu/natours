@@ -1,22 +1,22 @@
-const express = require("express");
-const morgan = require("morgan");
+const express = require('express');
+const morgan = require('morgan');
 
-const tourRouter = require("./routes/tourRoutes");
-const userRouter = require("./routes/userRouters");
+const tourRouter = require('./routes/tourRoutes');
+const userRouter = require('./routes/userRoutes');
 
 const app = express();
 
 // 1. MIDDLEWARES
 console.log(process.env.NODE_ENV);
-if (process.env.NODE_ENV === "development") {
-  app.use(morgan("dev"));
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
 }
 
 app.use(express.json());
 app.use(express.static(`${__dirname}/public`));
 
 app.use((req, res, next) => {
-  console.log("This is custom middleware");
+  console.log('This is custom middleware');
   next();
 });
 
@@ -25,11 +25,8 @@ app.use((req, res, next) => {
   next();
 });
 
-// 2. ROUTE HANDLERS
-
 // 3. ROUTES
-app.use("/api/v1/tours", tourRouter);
-app.use("/api/v1/users", userRouter);
+app.use('/api/v1/tours', tourRouter);
+app.use('/api/v1/users', userRouter);
 
-// START SERVER
 module.exports = app;

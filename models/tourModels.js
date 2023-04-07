@@ -18,4 +18,15 @@ const tourSchema = new mongoose.Schema({
 
 const Tour = mongoose.model('Tour', tourSchema);
 
+// const testTour = new Tour({
+//   name: 'Ninja Monk',
+//   price: 101,
+//   rating: 4.0,
+// });
+
+// testTour
+//   .save()
+//   .then((doc) => console.log(doc))
+//   .catch((err) => console.log(err));
+
 module.exports = Tour;
