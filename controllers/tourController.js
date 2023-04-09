@@ -1,7 +1,7 @@
 const fs = require('fs');
 // const path = require('path');
 
-const Tour = require('./../models/tourModels');
+const Tour = require('./../models/tourModel');
 const { log } = require('console');
 
 const getAllTours = async (req, res) => {
