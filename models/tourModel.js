@@ -56,6 +56,8 @@ const tourSchema = new mongoose.Schema({
   startDates: [Date],
 });
 
+// Virtual model schema are not fetched from the database. They are obtained by transforming schema actually obtained from the database. Hence virtual schema cannot be added to toute query parameters
+// eg. obtaining distance in miles from kilometers
 tourSchema.virtual('durationWeeks').get(
   function () {
     return this.duration / 7;
