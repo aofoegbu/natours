@@ -69,6 +69,7 @@ tourSchema.virtual('durationWeeks').get(
   }
 );
 
+// call model
 const Tour = mongoose.model('Tour', tourSchema);
 
 // const testTour = new Tour({
