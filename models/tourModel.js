@@ -83,4 +83,5 @@ const Tour = mongoose.model('Tour', tourSchema);
 //   .then((doc) => console.log(doc))
 //   .catch((err) => console.log(err));
 
+// default exxport
 module.exports = Tour;
