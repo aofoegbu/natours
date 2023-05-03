@@ -1,3 +1,4 @@
+// mongoose schema for Model of Node js Express js MVC Architecture
 const mongoose = require('mongoose');
 
 // schema
