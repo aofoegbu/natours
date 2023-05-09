@@ -166,7 +166,7 @@ const deleteTour = async (req, res) => {
 };
 
 // calculating tour statistics
-
+// uses mongodb aggregation pipeline
 const getTourStats = async (req, res) => {
   try {
     const stats = await Tour.aggregate([
