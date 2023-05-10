@@ -184,6 +184,7 @@ const getTourStats = async (req, res) => {
           maxPrice: { $max: '$price' },
         },
       },
+      // add sort condition
       {
         $sort: { avgPrice: 1 },
       },
