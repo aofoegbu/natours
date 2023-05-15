@@ -23,4 +23,5 @@ router
   .patch(tourController.updateTour)
   .delete(tourController.deleteTour);
 
+// export router
 module.exports = router;
