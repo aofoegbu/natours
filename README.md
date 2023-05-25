@@ -1,1 +1,1 @@
-natours - a tour web application buiil with Nodejs and React (MERN stack)
+Natours - a tour web application buiil with Nodejs and React (MERN stack)
