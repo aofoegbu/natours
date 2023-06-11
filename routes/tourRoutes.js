@@ -1,4 +1,4 @@
-// ttour routes
+// tour routes
 
 const express = require('express');
 const tourController = require('../controllers/tourController');
